@@ -21,7 +21,7 @@ According to cross-fold validation theory, we get number of trainset is 556, tes
 Figure2:Train set and test set
 
 MLP Algorithm
-All input feature vectors are augmented with the 1 as follows $xyz$ since 
+All input feature vectors are augmented with the 1 as follows  since 
 Answer:
 
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image017.png)
