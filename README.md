@@ -7,7 +7,7 @@ Read the dataset into a list and shuffle it with the random.shuffle method. Hint
 Answer:
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image005.png)
 Figure1:Original dataset(df) and randome shuffled dataset(list)
-( 5 marks ) Split the dataset as five parts to do cross-fold validation: Each of 5 subsets was used as test set and the remaining data was used for training. Five subsets were used for testing rotationally to evaluate the classification accuracy. 
+Split the dataset as five parts to do cross-fold validation: Each of 5 subsets was used as test set and the remaining data was used for training. Five subsets were used for testing rotationally to evaluate the classification accuracy. 
 Answer:
 	According to cross-fold validation theory, we get number of trainset is 556, testset is 139.
  
