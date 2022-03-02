@@ -2,10 +2,10 @@
 Multilayer Perceptron, the basic neural network, can predict the results by supervisor learning. The database is breast-cancer-wisconsin.data,you can download it in Kaggle or by python online.
 Lab 5: Neural Network
 Shuai BAO
-5.2 	Estimation of Classification Methods
-( 5 marks ) Read the dataset into a list and shuffle it with the random.shuffle method. Hint: fix the random seed (e.g. random.seed(17) ) before calling random.shuffle
+Estimation of Classification Methods
+Read the dataset into a list and shuffle it with the random.shuffle method. Hint: fix the random seed (e.g. random.seed(17) ) before calling random.shuffle
 Answer:
- 
+![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image005.png)
 Figure1:Original dataset(df) and randome shuffled dataset(list)
 ( 5 marks ) Split the dataset as five parts to do cross-fold validation: Each of 5 subsets was used as test set and the remaining data was used for training. Five subsets were used for testing rotationally to evaluate the classification accuracy. 
 Answer:
