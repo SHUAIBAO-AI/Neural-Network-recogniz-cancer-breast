@@ -7,6 +7,7 @@ Estimation of Classification Methods
 Read the dataset into a list and shuffle it with the random.shuffle method. Hint: fix the random seed (e.g. random.seed(17) ) before calling random.shuffle
 
 Answer:
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image005.png)
 
 Figure1:Original dataset(df) and randome shuffled dataset(list)
@@ -14,6 +15,7 @@ Figure1:Original dataset(df) and randome shuffled dataset(list)
 Split the dataset as five parts to do cross-fold validation: Each of 5 subsets was used as test set and the remaining data was used for training. Five subsets were used for testing rotationally to evaluate the classification accuracy. 
 Answer:
 According to cross-fold validation theory, we get number of trainset is 556, testset is 139.
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image009.png)
 
 Figure2:Train set and test set
@@ -21,6 +23,7 @@ Figure2:Train set and test set
 MLP Algorithm
 All input feature vectors are augmented with the 1 as follows $xyz$ since 
 Answer:
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image017.png)
 
 Figure3:Augmented dataset
@@ -28,12 +31,14 @@ Figure3:Augmented dataset
 Scale linearly the attribute values xij of the data matrix Xˆ into [−1,1] for each dimensional feature as follows:
 where a small constant 10−6 is used to avoid that the number is divided by zero.
 Answer:
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image023.png)
 
 Figure4:Linear scaled dataset
 
 The label ln of the n-th example is converted into a K dimensional vector tn as follows (K is the number of the classes)
 Answer:
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image029.png)
 
 Figure5:Reset label vector
@@ -41,6 +46,7 @@ Figure5:Reset label vector
 Initialize all weight wij of MLP network such as  where
 D and K is the number of the input nodes and the output nodes (each node is related to a class), respectively.
 Answer:
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image169.png)
 
 Figure6:Random number-weight ω_ij=ω_input 
@@ -48,6 +54,7 @@ Figure6:Random number-weight ω_ij=ω_input
 
 Choose randomly an input vector x to network and forward propagate through the network (H is the number of the hidden units) to obtain the error rate  of the example x. Notice that the subscript n in the equations is omitted for the convinence. •
 Answer:
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image012.png)
 
 Figure7:Structure of full connect between hidden layer and inpute layer
@@ -65,6 +72,7 @@ After we got the hidden layer vector, we should use activate function to get new
 Activate function:tanh⁡(x)=(e^x-e^(-x))/(e^x+e^(-x) )  
 Hidden layer h1-unit=tanh⁡(Hidden layer h1-unit-unactivate)
 	In this sample, we use random value to initialize the weight matrix:
+	
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image169.png)
 
 Figure8:Initial input layer weight matrix
@@ -74,6 +82,7 @@ Answer:
 According to the previously calculation and the structure of network, we can get the error δk = yk – tk, , δ_k=0.645.
 δ_k is the error between train label y_k and predicted result t_k.
 The structure of net work is that:
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image134.png)
 
 Figure9:The sturcture of network
@@ -82,10 +91,12 @@ Backpropagate the δ’s to obtain δj for each hidden unit in the network
 Answer:
 According to the previously calculation, we can get the hidden layer error for each layer:
 For hidden layer h1:
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image147.png)
 
 Figure10:δ_1  in hidden layer h1
 For hidden layer h2:
+
 ![image](https://github.com/STPChenFang/Neural-Network-recogniz-cancer-breast/blob/main/IMG-breast%20cancer%20prediction/image151.png)
 
 Figure11:δ_2  in hidden layer h2
